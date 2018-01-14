@@ -1,17 +1,33 @@
-import React, { Component } from 'react'
-import { View, Text } from 'react-native'
+import React from 'react'
+import { TabNavigator } from 'react-navigation'
 
-class Home extends Component {
-  render() {
-    return (
-      <View>
-        <Text>Home...</Text>
-        <Text>Home...</Text>
-        <Text>Home...</Text>
-        <Text>Home...</Text>
-      </View>
-    )
+import Root from './root'
+import Discover from '../discover'
+import Publish from '../publish'
+import Chat from '../chat'
+import My from '../my'
+
+let HomeNav = TabNavigator({
+  Root: {
+    screen: Root,
+    Title: 'Grape'
+  },
+  Discover: {
+    screen: Discover,
+    Title: '发现'
+  },
+  Publish: {
+    screen: Publish,
+    title: '发布'
+  },
+  Chat: {
+    screen: Chat,
+    title: '聊天'
+  },
+  My: {
+    screen: My,
+    title: '我的'
   }
-}
+})
 
-export default Home
+export default HomeNav

@@ -4,7 +4,7 @@ import { StackNavigator } from 'react-navigation'
 
 import Home from './container/component/home'
 
-let RootNavigator = StackNavigator({
+let RootNav = StackNavigator({
   Home: {
     screen: Home,
     path: '/'
@@ -13,4 +13,4 @@ let RootNavigator = StackNavigator({
   headerMode: 'none'
 })
 
-export default RootNavigator
+export default RootNav
