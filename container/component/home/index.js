@@ -34,7 +34,7 @@ let HomeNav = TabNavigator({
     navigationOptions: {
       tabBarLabel: '发布',
       tabBarIcon: ({ tintColor }) => (
-        <MaterialIcons name='add-circle' size={26} color={tintColor} />
+        <MaterialIcons name='add-circle' size={27} color={tintColor} />
       )
     }
   },
